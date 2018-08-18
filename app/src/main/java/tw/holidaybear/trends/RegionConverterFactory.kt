@@ -40,7 +40,6 @@ class RegionConverterFactory {
                 "45" -> "Hungary"
                 "3" -> "India"
                 "19" -> "Indonesia"
-                "54" -> "Ireland"
                 "6" -> "Israel"
                 "27" -> "Italy"
                 "4" -> "Japan"
