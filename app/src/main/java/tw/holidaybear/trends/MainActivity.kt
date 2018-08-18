@@ -1,16 +1,19 @@
 package tw.holidaybear.trends
 
+import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
+import tw.holidaybear.trends.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         load()
     }
 
@@ -19,6 +22,6 @@ class MainActivity : AppCompatActivity() {
         api.getTrends()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe ({ result.text = it.toString() }, { result.text = it.message })
+            .subscribe ({ binding.trendView.playTrendList(it[40].keywords) }, {})
     }
 }
