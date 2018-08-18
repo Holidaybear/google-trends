@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="valencia">#D94338</color>
+    <color name="selective_yellow">#F2B200</color>
+    <color name="salem">#109C56</color>
+    <color name="cornflower_blue">#4487F2</color>
+    <color name="boulder">#757575</color>
 </resources>
