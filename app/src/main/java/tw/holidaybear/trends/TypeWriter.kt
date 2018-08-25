@@ -2,10 +2,10 @@ package tw.holidaybear.trends
 
 import android.content.Context
 import android.os.Handler
+import android.support.v7.widget.AppCompatTextView
 import android.util.AttributeSet
-import android.widget.TextView
 
-class TypeWriter : TextView {
+class TypeWriter : AppCompatTextView {
 
     constructor(context: Context) : super(context)
 
