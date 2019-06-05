@@ -2,8 +2,8 @@ package tw.holidaybear.trends
 
 import android.content.Context
 import android.os.Handler
-import android.support.constraint.ConstraintLayout
-import android.support.v4.content.ContextCompat
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
